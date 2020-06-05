@@ -1,0 +1,361 @@
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;   
+}
+
+main {
+
+flex-grow: 1;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+}
+
+.legend {
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+/* Nav bar and links  */
+header > img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+header nav {
+
+background-color: gold;
+color: black;
+
+}
+
+nav{
+  width:100vw;
+}
+
+nav ul {
+  display: flex;
+    
+}
+
+nav ul li {
+margin: 0 5vw;
+font-size: 2vw;
+
+
+}
+
+ ul {
+
+ list-style-type: none ;
+}
+
+#mobile {
+  display: none;
+}
+
+
+/* Animation for image */
+#superBrat.animate {
+  animation: fly 1s infinite;
+  position: absolute;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateX(75%);
+    }
+}
+
+/*  Hide message after submitting email */
+
+.hidden {
+ display: none;
+}
+
+
+.enter-email {
+    padding: 10px;
+}
+/* Do align vertically the contents of the form */
+/* https://stackoverflow.com/questions/25311541/how-to-vertically-align-text-inside-a-flexbox */
+
+
+#special-offers{
+    padding: 100px;
+    margin: 20%;
+    display: inline-block;
+    text-align: center;
+    size: 10%;
+    background-color: rgb(255, 208, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#submit {
+    margin: 20px;
+}
+
+.submit-email {
+    margin: 10px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#paybutton {
+
+  background-color: green;
+}
+
+#getcomboButton {
+  width: 100%;
+  margin: 5px;
+  background-color: green;
+  padding: 12px;
+  border-radius: 9px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size: 20px;
+  color: black solid;
+  border: none;
+  
+}
+
+/* FORM create combo */
+
+label {
+    display: block;
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: forestgreen;
+}
+
+
+#formTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ff4500;
+    text-align: center ;  
+
+}
+
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the Pay button */
+  .paycombo {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+
+  }
+  
+
+  /* Style the container */
+  .container-form {
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0px 0px 0px 100px;
+  
+  }
+
+  /* Center the container form */
+.parent-container {
+  text-align: center;
+}
+
+.container-form {
+  display: inline-block;
+  width: 75%;
+  margin: auto;
+}
+
+/* Questions form */
+.questions-form {
+text-align: left;
+margin-top: 10px;
+}
+
+.fname {
+  text-align: left;
+}
+
+
+  ::after, ::before {
+      box-sizing: border-box;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .container-form.size{
+
+  max-width: 46%;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+
+  /* FOOTER */
+
+  footer {
+
+    width: 100vw;
+    background-color: gold;
+    padding: 30px;
+  }
+
+  footer ul {
+    display: flex;
+
+  }
+
+  footer ul li{
+
+   margin: auto;
+   font-size: 1vw;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }  
+
+  /* Mobile responsiveness */
+
+
+   /* @media (max-width: 767px) {
+  .nav{ width: 20%; margin: 1%; float: left}
+  .container{ width: 20%; margin: 1%; float: left}
+  .email-container{width: 20%; margin: 1%; float: left}
+  .container-form { width: 20%; margin: 1%; float:left}
+  .footer{ width: 20%; margin: 1%; float: left}
+  }  */
+
+
+/* Tablet responsiveness */
+
+  @media (max-width: 768px) and (max-width: 991px) {
+    .nav{ width: 50%; margin: 1%, left}
+    .container{ width: 50%; margin: 1%, left}
+    .container-form { width: 50%; margin: 1%, left}
+    .footer{ width: 50%; margin: 1%, left}
+    }
+  
+  /* Desktop responsiveness */
+    
+  
+
+
+
+    /* Nav bar responsive on mobile */
+
+    @media only screen and (max-width:500px) {
+
+      ul{
+
+        flex-direction: column;
+
+      }
+
+      li{
+        margin:0;
+      }
+
+      a{
+        display: block;
+      }
+    
+
+      #mobile{
+        /* show the button on mobile */
+        display: block;
+        /* style it to make it nicer */
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: blue;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+/* images made responsive */
+img {
+  max-width: 100%;
+  display: block; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Add a liquid button in the home page https://www.youtube.com/watch?v=wjHTKLstbRg//
+  
+  
+
+
